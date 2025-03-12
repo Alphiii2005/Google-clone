@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Advanced Search</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Advanced Search</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Navigation Link -->
-    <div class="nav">
-        <a href="index.html">Google Search</a>
-    </div>
-
-    <!-- Google Advanced Search Form -->
-    <div class="container">
-        <h1>Google Advanced Search</h1>
-        <h4 class="advanced-input">Find pages with...</h4>
-        <form action="https://www.google.com/search">
-            <div class="advanced-input">
-                <label>all these words:</label>
-                <input type="text" name="as_q">
-            </div>
-            <div class="advanced-input">
-                <label>this exact word or phrase:</label>
-                <input type="text" name="as_epq">
-            </div>
-            <div class="advanced-input">
-                <label>any of these words:</label>
-                <input type="text" name="as_oq">
-            </div>
-            <div class="advanced-input">
-                <label>none of these words:</label>
-                <input type="text" name="as_eq">
-            </div>
-            <div class="buttons">
-                <input type="submit" value="Advanced Search" class="advanced-btn">
-            </div>
-        </form>
-    </div>
-
+  <div class="links">
+    <a href="index.html">Google Search</a>
+  </div>
+  <div class="advanced-container">
+    <h1 class="advanced-heading">Advanced Search</h1>
+    <hr>
+    <h2 class="find-pages-heading">Find pages with…</h2>
+    <form action="https://www.google.com/search" method="GET">
+      <div class="advanced-form-group">
+        <div class="advanced-label">
+          <label for="all-words">all these words:</label>
+        </div>
+        <div class="advanced-input">
+          <input type="text" id="all-words" name="as_q">
+        </div>
+      </div>
+      <div class="advanced-form-group">
+        <div class="advanced-label">
+          <label for="exact-phrase">this exact word or phrase:</label>
+        </div>
+        <div class="advanced-input">
+          <input type="text" id="exact-phrase" name="as_epq">
+        </div>
+      </div>
+      <div class="advanced-form-group">
+        <div class="advanced-label">
+          <label for="any-words">any of these words:</label>
+        </div>
+        <div class="advanced-input">
+          <input type="text" id="any-words" name="as_oq">
+        </div>
+      </div>
+      <div class="advanced-form-group">
+        <div class="advanced-label">
+          <label for="none-words">none of these words:</label>
+        </div>
+        <div class="advanced-input">
+          <input type="text" id="none-words" name="as_eq">
+        </div>
+      </div>
+      <div class="advanced-form-group">
+        <div class="advanced-label"></div>
+        <div class="advanced-input">
+          <button type="submit" class="advanced-search-button">Advanced Search</button>
+        </div>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
