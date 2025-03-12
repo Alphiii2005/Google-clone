@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Image Search</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Image Search</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Navigation Link -->
-    <div class="nav">
-        <a href="index.html">Google Search</a>
-    </div>
-
-    <!-- Google Image Search Form -->
-    <div class="container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Google_Images_2015_logo.svg/800px-Google_Images_2015_logo.svg.png" alt="Google Logo" class="logo">
-        <form action="https://www.google.com/search">
-            <input type="hidden" name="tbm" value="isch">  <!-- Enables Image Search -->
-            <input type="text" name="q" class="search-bar" placeholder="Search Images">
-            <div class="buttons">
-                <input type="submit" value="Search Images">
-            </div>
-        </form>
-    </div>
-
+  <div class="links">
+    <a href="index.html">Google Search</a>
+  </div>
+  <div class="container">
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+    <form action="https://www.google.com/images" method="GET">
+      <input type="text" name="q" class="search-bar" placeholder="Search Google Images">
+      <div class="buttons">
+        <button type="submit">Image Search</button>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
